@@ -11,7 +11,7 @@
     rgba(44, 44, 44, 0.951),
     rgba(28, 27, 27, 0.949)
   );
-  --item-gradient: linear-gradient(to right, rgb(1, 90, 17), rgb(32, 32, 32));
+  --item-gradient: linear-gradient(to right, rgb(1, 90, 17), rgb(53, 53, 53));
   --navbarLine-color: rgb(0, 0, 0);
   --thirdcolor-theme: rgb(25, 25, 25);
   --generalText-color: white;
