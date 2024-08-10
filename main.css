@@ -340,7 +340,7 @@ footer {
     border-radius: 15px;
     border-style: solid;
     border-color: var(--boxItem-borderline);
-    background-image: linear-gradient(to right, rgb(1, 90, 17), rgb(0, 0, 0));
+    background-image: var(--item-gradient);
   }
   .container {
     display: flex;
@@ -350,7 +350,7 @@ footer {
   }
   .container > .box-items {
     border-color: var(--boxItem-borderline);
-    background-image: linear-gradient(to right, rgb(1, 90, 17), rgb(0, 0, 0));
+    background-image:var(--item-gradient);
   }
   .header-hero > nav > ul > li {
     display: flex;
@@ -430,7 +430,6 @@ footer {
     color: rgb(51, 255, 0);
     padding: 20px 0;
     font-size: 1.5rem;
-    background-color: drakgr;
   }
 }
 
