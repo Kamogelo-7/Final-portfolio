@@ -173,7 +173,7 @@ h1 + p {
   border: solid;
   border-width: 1px;
   border-radius: 5px;
-  background-color:darkgray;
+background-color: rgb(42, 42, 42);
 }
 
 .card-item:hover {
