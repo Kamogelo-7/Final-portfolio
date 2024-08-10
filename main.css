@@ -8,8 +8,8 @@
   --generalFont-size: 1.5rem;
   --background-image: linear-gradient(
     to right,
-    rgba(16, 15, 15, 0.951),
-    rgba(7, 7, 7, 0.949)
+    rgba(44, 44, 44, 0.951),
+    rgba(28, 27, 27, 0.949)
   );
   --item-gradient: linear-gradient(to right, rgb(1, 90, 17), rgb(0, 0, 0));
   --navbarLine-color: rgb(0, 0, 0);
@@ -33,7 +33,7 @@ body {
 /*Hero section styling and maintaince!*/
 
 .header-hero {
-  background-color: rgb(14, 14, 14);
+  background-color: rgb(39, 38, 38);
   border-bottom-color: var(--thirdcolor-theme);
   border-bottom-style: solid;
   margin: auto;
