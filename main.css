@@ -173,7 +173,7 @@ h1 + p {
   border: solid;
   border-width: 1px;
   border-radius: 5px;
-  background-color:drakgray;
+  background-image: var(--background-image);
 }
 
 .card-item:hover {
@@ -430,6 +430,7 @@ footer {
     color: rgb(51, 255, 0);
     padding: 20px 0;
     font-size: 1.5rem;
+    background-color: drakgr;
   }
 }
 
