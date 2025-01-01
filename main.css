@@ -13,6 +13,14 @@
   );
   --item-gradient: linear-gradient(to right, rgb(1, 90, 17), rgb(50, 50, 50));
   --navbarLine-color: rgb(0, 0, 0);
+  background-color: hsla(0, 1%, 17%, 1);
+  background-image: radial-gradient(
+      at 0% 100%,
+      hsla(15, 0%, 11%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 80% 100%, hsla(240, 1%, 19%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(340, 1%, 9%, 1) 0px, transparent 50%);
   --thirdcolor-theme: rgb(25, 25, 25);
   --generalText-color: white;
   --customBlue-text: rgb(0, 181, 3);
