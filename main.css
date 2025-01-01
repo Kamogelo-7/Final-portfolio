@@ -173,7 +173,7 @@ h1 + p {
   border: solid;
   border-width: 1px;
   border-radius: 5px;
-background-color: rgb(42, 42, 42);
+  background-color: rgb(42, 42, 42);
 }
 
 .card-item:hover {
@@ -248,7 +248,7 @@ footer {
   width: 100%;
   bottom: 0;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   background-color: rgb(7, 7, 7);
 }
 /*Css design for gird container */
@@ -350,7 +350,7 @@ footer {
   }
   .container > .box-items {
     border-color: var(--boxItem-borderline);
-    background-image:var(--item-gradient);
+    background-image: var(--item-gradient);
   }
   .header-hero > nav > ul > li {
     display: flex;
