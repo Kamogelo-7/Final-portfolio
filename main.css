@@ -195,7 +195,6 @@ h1 + p {
   font-size: 1.4rem;
   text-transform: capitalize;
   color: var(--generalText-color);
-  text-shadow: 3px 5px 3px hsl(0, 0%, 0%);
 }
 .card-item > h3 + p {
   text-align: center;
