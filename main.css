@@ -27,11 +27,28 @@
   --boxItem-borderline: black;
   --carditem-borderline: rgb(255, 255, 255);
 }
+
+/* Css styling for projects.html*/
+.project-display {
+  display: grid;
+
+  place-content: center;
+  color: var(--generalText-color);
+}
+
+#coming {
+  color: rgb(76, 76, 76);
+  padding-top: 30rem;
+  transform: skewY(20deg);
+}
+
 html {
   scroll-behavior: smooth;
   scroll-snap-type: mandatory;
 }
-body {
+
+body,
+#projects {
   background-color: var(--navbarLine-color);
   overflow-x: hidden;
   height: 100vh;
@@ -207,6 +224,25 @@ h1 + p {
   color: rgb(0, 255, 0);
 }
 
+.certificates {
+  height: 360px;
+  width: 360px;
+  transition: ease-in-out 0.5s;
+}
+
+.certificates:hover {
+  scale: 1.1;
+  border-radius: 15px;
+  box-shadow: rgb(75, 75, 75) 5px 3px 15px;
+}
+
+.G-learing {
+  width: 550px;
+}
+.adjust {
+  transform: translateY(-34px);
+}
+
 .card-info {
   transform: translateY(-45px);
 }
@@ -228,17 +264,24 @@ h1 + p {
   border-radius: 15px;
   transform: translateY(-25px);
 }
+
 /*List information section css*/
-#uni {
-  background-color: var(--navbarLine-color);
-  flex-direction: column;
-  display: flex;
-  line-height: 40px;
-  padding: 10px;
+#Qualifications-wrapper {
   color: var(--generalText-color);
-  align-items: center;
-  justify-content: center;
+  display: flex;
+  gap: 60px;
+  flex-wrap: nowrap;
+  background-color: var(--navbarLine-color);
+  padding: 80px 60px 80px 40px;
 }
+.badges {
+  text-align: center;
+  transform: translateY(-70px);
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
 .list {
   text-align: center;
   font-weight: bold;
@@ -416,6 +459,23 @@ footer {
     padding: 20px 0;
     font-size: 1.5rem;
   }
+  #Qualifications-wrapper {
+    columns: 1;
+    display: grid;
+    gap: 20px;
+    place-items: center;
+    padding: 50px 10px 50px;
+  }
+  .certificates {
+    height: 200px;
+    width: 340px;
+  }
+
+  .badges {
+    text-align: center;
+    transform: translateY(-265px);
+    text-transform: capitalize;
+  }
 }
 
 @media (max-width: 460px) {
@@ -446,4 +506,16 @@ footer {
     transform: translateX(-50px);
     margin-left: 15px;
   }
+  /* #Qualifications-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 70px 50px 80px;
+    position: relative;
+  }
+  .badges {
+    transform: translateY(-45px);
+  } */
+  /* .badge-adjust {
+    text-align: center;
+  } */
 }
