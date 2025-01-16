@@ -448,10 +448,17 @@ footer {
     display: grid;
     gap: 20px;
     place-items: center;
+    padding: 50px 10px 50px;
   }
   .certificates {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 340px;
+  }
+
+  .badges {
+    text-align: center;
+    transform: translateY(-265px);
+    text-transform: capitalize;
   }
 }
 
@@ -483,11 +490,11 @@ footer {
     transform: translateX(-50px);
     margin-left: 15px;
   }
-  #Qualifications-wrapper {
+  /* #Qualifications-wrapper {
     color: var(--generalText-color);
     display: flex;
     gap: 60px;
     flex-wrap: nowrap;
     background-color: var(--navbarLine-color);
-  }
+  } */
 }
