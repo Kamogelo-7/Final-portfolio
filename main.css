@@ -27,11 +27,28 @@
   --boxItem-borderline: black;
   --carditem-borderline: rgb(255, 255, 255);
 }
+
+/* Css styling for projects.html*/
+.project-display {
+  display: grid;
+
+  place-content: center;
+  color: var(--generalText-color);
+}
+
+#coming {
+  color: rgb(76, 76, 76);
+  padding-top: 30rem;
+  transform: skewY(20deg);
+}
+
 html {
   scroll-behavior: smooth;
   scroll-snap-type: mandatory;
 }
-body {
+
+body,
+#projects {
   background-color: var(--navbarLine-color);
   overflow-x: hidden;
   height: 100vh;
@@ -491,10 +508,15 @@ footer {
     margin-left: 15px;
   }
   /* #Qualifications-wrapper {
-    color: var(--generalText-color);
-    display: flex;
-    gap: 60px;
-    flex-wrap: nowrap;
-    background-color: var(--navbarLine-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 70px 50px 80px;
+    position: relative;
+  }
+  .badges {
+    transform: translateY(-45px);
+  } */
+  /* .badge-adjust {
+    text-align: center;
   } */
 }
