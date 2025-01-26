@@ -6,3 +6,17 @@ yarn-error.log*
 
 tailwind.config.js
 postcss.config.js
+
+.env
+.DS_Store
+.cache
+
+.*
+
+!.gitignore
+
+# Ignore specific files
+
+hidden.txt
+mybusiness.txt
+
