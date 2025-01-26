@@ -1,0 +1,2 @@
+npx tailwind command:  npx @tailwindcss/cli -i ./src/tailwind.css -o ./public/styles/output.css --watch
+/Final-portfolio/public/styles/output.css
