@@ -8,7 +8,7 @@
   },
   "keywords": [],
   "author": "Kamogelo Mogasoa",
-  "license": "ISC  ",
+  "license": "ISC",
   "dependencies": {
     "@tailwindcss/cli": "^4.0.0",
     "tailwindcss": "^4.0.0"

@@ -47,8 +47,8 @@ html {
   scroll-snap-type: mandatory;
 }
 
-body,
-#projects {
+body
+/* #projects { */ {
   background-color: var(--navbarLine-color);
   overflow-x: hidden;
   height: 100vh;
