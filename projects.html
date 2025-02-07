@@ -7,80 +7,41 @@
     <title>My Projects - Kamogelo Mogasoa</title>
   </head>
   <body id="projects-page" class="bg-gray-900 text-gray-200">
-    <header class="sticky top-0 z-10">
+    <header class="header bg-gray-800 border-b-2 border-green-400">
       <nav
         class="container mx-auto px-6 py-4 flex items-center justify-between"
       >
-        <a href="index.html" class="text-white font-bold text-2xl">FrontEnd</a>
-        <div class="md:hidden">
-          <!-- Mobile menu container for animation -->
-          <button
-            title="button"
-            class="text-white focus:outline-none"
-            id="mobile-menu-button"
-          >
-            <!-- Added ID for easier JS selection -->
-            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-              <path
-                fill-rule="evenodd"
-                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2z"
-              />
-            </svg>
-          </button>
-          <div
-            id="mobile-menu"
-            class="hidden md:hidden absolute top-full left-0 right-0 bg-gray-800 shadow-md z-20 overflow-hidden transition-all duration-300 ease-out transform translate-y-[-100%] opacity-0"
-          >
-            <ul class="px-6 py-4 space-y-2">
-              <li>
-                <a
-                  href="index.html"
-                  class="block text-gray-300 hover:text-white py-2 transition-colors duration-200"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="index.html#about"
-                  class="block text-gray-300 hover:text-white py-2 transition-colors duration-200"
-                  >About Me</a
-                >
-              </li>
-              <li>
-                <a
-                  href="index.html#projects"
-                  class="block text-gray-300 hover:text-white py-2 transition-colors duration-200"
-                  >Projects</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <ul class="hidden md:flex space-x-6">
-          <!-- Desktop Navigation (unchanged) -->
-          <li>
-            <a
-              href="index.html"
-              class="text-gray-300 hover:text-white transition-colors duration-200"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="index.html#about"
-              class="text-gray-300 hover:text-white transition-colors duration-200"
-              >About Me</a
-            >
-          </li>
-          <li>
-            <a
-              href="index.html#projects"
-              class="text-gray-300 hover:text-white transition-colors duration-200"
-              >Projects</a
-            >
+        <label
+          href="index.html"
+          class="text-green-400 font-bold text-xl md:text-2xl"
+          >FrontEnd</label
+        >
+
+        <ul class="md:flex space-x-6">
+          <li class="font-semibold">
+            <a href="index.html" class="hover:text-green-400">Home me</a>
           </li>
         </ul>
       </nav>
+
+      <div
+        class="container mx-auto flex flex-col items-center justify-center py-8"
+      >
+        <div class="relative">
+          <div class="absolute inset-0 rounded-full"></div>
+          <img
+            id="main-image"
+            src="images/Quality pic.JPG"
+            alt="A image of me"
+            class="relative rounded-full w-64 h-64 object-cover transition-transform duration-500 hover:scale-110"
+          />
+        </div>
+        <h1 class="mt-4 text-4xl font-bold">Hi, I'm Kamogelo</h1>
+        <p class="mt-2 text-lg text-center">
+          I'm a passionate Front-End Developer dedicated to crafting engaging
+          web experiences.
+        </p>
+      </div>
     </header>
     <main class="py-section-y mt-6">
       <section id="project-content ">
@@ -227,6 +188,5 @@
         <a href="#" class="text-teal-500 hover:underline">Terms of Service</a>
       </div>
     </footer>
-    <script src="app.js" defer></script>
   </body>
 </html>
