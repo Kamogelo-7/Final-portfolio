@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const mobileMenuButton = document.getElementById("mobile-menu-button"); // Select button by ID
-  const mobileMenu = document.getElementById("mobile-menu"); // Select menu wrapper by ID
+  const mobileMenuButton = document.getElementById("mobile-menu"); // Select button by ID
+  const mobileMenu = document.getElementById("mobile"); // Select menu wrapper by ID
 
   if (mobileMenuButton && mobileMenu) {
     mobileMenuButton.addEventListener("click", () => {
