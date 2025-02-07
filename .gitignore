@@ -1,5 +1,7 @@
 .env
 .env.test
+# Node.js
+node_modules/
 
 .cache/
 
@@ -27,9 +29,6 @@ lerna-debug.log*
 # Tailwind CSS
 tailwind.config.js
 postcss.config.js
-
-# Node.js
-node_modules/
 
 # Build output
 dist/
