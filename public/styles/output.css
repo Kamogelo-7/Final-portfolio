@@ -558,14 +558,8 @@
   .bg-black {
     background-color: var(--color-black);
   }
-  .bg-cyan-400 {
-    background-color: var(--color-cyan-400);
-  }
   .bg-fuchsia-700 {
     background-color: var(--color-fuchsia-700);
-  }
-  .bg-red-600 {
-    background-color: var(--color-red-600);
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
