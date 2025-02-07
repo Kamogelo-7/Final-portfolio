@@ -4,7 +4,8 @@
   "description": "This is the new 2024 porftfolio re-work since the last one wasn't maintainable",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx @tailwindcss/cli -i ./src/tailwind.css -o ./public/styles/output.css --watch",
+    "test": "npx @tailwindcss/cli -i ./src/input.css -o ./public/styles/main.css --watch"
   },
   "keywords": [],
   "author": "Kamogelo Mogasoa",
