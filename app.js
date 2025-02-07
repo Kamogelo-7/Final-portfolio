@@ -1,6 +1,5 @@
 const mobileMenuButton = document.getElementById("mobile-menu"); // Select button by ID
 const mobileMenu = document.getElementById("mobile"); // Select menu wrapper by ID
-
 if (mobileMenuButton && mobileMenu) {
   mobileMenuButton.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden"); //  Keep toggling 'hidden' for initial mobile hiding
