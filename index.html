@@ -3,280 +3,423 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="public/styles/main.css" />
-    <title>Project Portfolio</title>
+    <link rel="stylesheet" href="public/styles/output.css" />
+    <title>Project Portfolio - Kamogelo Mogasoa</title>
   </head>
-  <body>
-    <!--This is the hero section that contains everything for the navigation nested in it-->
-    <header class="header-hero">
-      <nav>
-        <label>FrontEnd</label>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about-me">About me</a></li>
-          <li><a href="projects.html">Projects</a></li>
+  <body class="bg-gray-900 text-white border-b-2 border-green-400">
+    <!-- Hero Section -->
+    <header class="header bg-gray-800 border-b-2 border-green-400">
+      <nav
+        class="relative container mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <a
+          href="index.html"
+          class="text-green-400 font-bold text-xl md:text-2xl"
+          >FrontEnd</a
+        >
+        <div class="md:hidden">
+          <button
+            title="Navigation Menu"
+            id="mobile-menu"
+            class="text-white focus:outline-none"
+          >
+            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              <path
+                fill-rule="evenodd"
+                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2z"
+              />
+            </svg>
+          </button>
+          <div
+            id="mobile"
+            class="hidden md:hidden absolute top-[auto] left-0 right-0 bg-gray-800 shadow-md z-20 overflow-hidden transition-all duration-300 ease-out transform translate-y-[-100%] opacity-0"
+            style="top: 100%"
+          >
+            <ul class="px-6 py-4 space-y-2">
+              <li class="font-semibold">
+                <a
+                  href="#about-me"
+                  class="block hover:text-green-400 py-2 transition-colors duration-200"
+                  >About me</a
+                >
+              </li>
+              <li class="font-semibold">
+                <a
+                  href="projects.html"
+                  class="block hover:text-green-400 py-2 transition-colors duration-200"
+                  >Projects</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="hidden md:flex space-x-6">
+          <li class="font-semibold">
+            <a href="#about-me" class="hover:text-green-400">About me</a>
+          </li>
+          <li class="font-semibold">
+            <a href="projects.html" class="hover:text-green-400">Projects</a>
+          </li>
         </ul>
       </nav>
-      <div class="about-hero">
-        <div class="img-info">
-          <div class="image-bg"></div>
+      <div
+        class="container mx-auto flex flex-col items-center justify-center py-8"
+      >
+        <div class="relative">
+          <div class="absolute inset-0 rounded-full"></div>
           <img
             id="main-image"
             src="images/Quality pic.JPG"
             alt="A image of me"
+            class="relative rounded-full w-64 h-64 object-cover transition-transform duration-500 hover:scale-110"
           />
-          <h1>Hi I'm kamogelo</h1>
-          <p>
-            I'm a passionate Front-End Developer dedicated to crafting engaging
-            web experiences.
-          </p>
         </div>
+        <h1 class="mt-4 text-4xl font-bold">Hi, I'm Kamogelo</h1>
+        <p class="mt-2 text-lg text-center">
+          I'm a passionate Front-End Developer dedicated to crafting engaging
+          web experiences.
+        </p>
       </div>
     </header>
 
-    <section class="content">
-      <div class="container">
-        <div class="box-items">
-          <a href="https://github.com/Kamogelo-7">gitHub</a>
-        </div>
-        <div class="box-items">
-          <a href="https://www.youtube.com/@Kamogelo-Mogasoa">youtube</a>
-        </div>
-        <div class="box-items">
-          <a href="https://www.fiverr.com/ekgrafx">fiverr</a>
-        </div>
-        <div class="box-items">
-          <a href="https://stackoverflow.com/users/20754182/enoch-mogasoa"
-            >stackoverflow</a
-          >
-        </div>
+    <!-- Links Section -->
+    <section class="py-12">
+      <div
+        class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-7"
+      >
+        <a
+          href="https://github.com/Kamogelo-7"
+          class="block bg-gray-950 p-4 rounded text-center hover:bg-gray-700"
+          >GitHub</a
+        >
+        <a
+          href="https://www.youtube.com/@Kamogelo-Mogasoa"
+          class="block bg-gray-950 p-4 rounded text-center hover:bg-gray-700"
+          >YouTube</a
+        >
+        <a
+          href="https://www.fiverr.com/ekgrafx"
+          class="block bg-gray-950 p-4 rounded text-center hover:bg-gray-700"
+          >Fiverr</a
+        >
+        <a
+          href="https://stackoverflow.com/users/20754182/enoch-mogasoa"
+          class="block bg-gray-950 p-4 rounded text-center hover:bg-gray-700"
+          >Stackoverflow</a
+        >
       </div>
 
-      <div class="main-content">
-        <h2>skills and knowledge</h2>
-        <div class="center-content">
-          <div class="card-item">
+      <!-- Skills Section -->
+      <div class="mt-12 container mx-auto px-3">
+        <h2 class="text-3xl font-bold text-center sm:space-x-2">
+          Skills and Knowledge
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-3.5"
+        >
+          <div
+            class="skills-card bg-gray-900 p-4 rounded shadow transition hover:shadow-lg"
+          >
             <img
-              class="image-size"
-              width="60px"
-              height="60px"
               src="images/CSS3_logo.svg.png"
-              alt="CSS3_logo"
+              alt="CSS3 Logo"
+              class="w-16 h-16 mx-auto"
             />
-            <h3 class="subtitle">Css skills</h3>
-            <p class="card-info">
-              Proficient in CSS syntax and properties, My expertise extends to
-              advanced layout techniques such as Flexbox and Grid, for
-              responsive designs.
+            <h3 class="text-xl font-semibold mt-4 text-center">CSS Skills</h3>
+            <p class="text-sm text-center mt-2">
+              Proficient in CSS, Flexbox, and Grid for responsive designs.
             </p>
           </div>
-
-          <div class="card-item">
+          <div
+            class="skills-card bg-gray-900 p-4 rounded shadow transition hover:shadow-lg"
+          >
             <img
-              class="richfield"
-              width="60px"
-              height="60px"
               src="images/richfield.png"
-              alt=""
+              alt="Richfield College Logo"
+              class="w-16 h-16 mx-auto"
             />
-            <h3 class="subtitle">Education</h3>
-            <p class="card-info">
-              Studied <em>I.T</em> at
+            <h3 class="text-xl font-semibold mt-4 text-center">Education</h3>
+            <p class="text-sm text-center mt-2">
+              Studied I.T at
               <a
                 href="https://www.richfield.ac.za/"
                 target="_blank"
                 rel="noopener noreferrer"
+                class="text-green-400 hover:underline"
                 >Richfield College</a
               >
-              Pretoria, I'm self-directed learning and always practicing to
-              enhance my skills and staying updated with industry trends.
+              in Pretoria. Always learning and practicing to enhance my skills.
             </p>
           </div>
-
-          <div class="card-item" id="about-me">
+          <div
+            class="skills-card bg-gray-900 p-4 rounded shadow transition hover:shadow-lg"
+          >
             <img
-              class="richfield"
-              height="60px"
-              width="60px"
               src="images/png-transparent-gray-box-logo-illustration-computer-icons-freight-transport-box-logistics-shipping-icon-angle-rectangle-triangle.png"
-              alt=""
+              alt="Extra Skills Icon"
+              class="w-16 h-16 mx-auto"
             />
-            <h3 class="important">extra Skills</h3>
-            <p class="card-info">
-              Familiarity with version control systems like Git and GitHub for
-              collaboration and project management. Designed and styled the
-              website using CSS for a visually appealing layout.
+            <h3 class="text-xl font-semibold mt-4 text-center">Extra Skills</h3>
+            <p class="text-sm text-center mt-2">
+              Familiar with Git/GitHub for version control and collaboration.
+              Designed and styled websites with CSS for a visually appealing
+              layout.
             </p>
           </div>
-
-          <div class="card-item" id="About-me">
-            <h3>What i do</h3>
-            <p>
-              Building responsive, user-friendly interfaces with the latest
-              technologies. Continuous Learning: Exploring new frameworks,
-              libraries, and tools to stay ahead. Skill Refinement: Always
-              iterating and improving on my existing knowledge and projects.
+          <div
+            class="skills-card bg-green-600 p-4 rounded shadow transition hover:shadow-lg"
+          >
+            <h3 class="text-xl text-black font-semibold text-center">
+              What I Do
+            </h3>
+            <p class="text-sm text-black text-center mt-2">
+              Building responsive, user-friendly interfaces with modern
+              technologies. Continuously learning and refining my skills.
             </p>
           </div>
         </div>
       </div>
     </section>
-    <main class="about-me about-me">
-      <div class="about-wrapper">
-        <div class="infographic">
-          <img width="300px" height="300px" src="images/chill.jpg" alt="" />
-        </div>
 
-        <div class="infographic">
-          <h3>about me</h3>
-          <p class="Myself">
-            welcome to my website i'm Kamogelo Mogasoa a Junior Software
-            Developer, I'm a passionate Front-End Software Developer dedicated
-            to crafting engaging web experiences. My journey is fueled by
-            continuous learning and refining my skills in the ever-evolving
-            world of web development.
+    <!-- About Me Section -->
+    <main id="about-me" class="py-12 bg-gray-950 border-t-2 border-green-400">
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center justify-center gap-8"
+      >
+        <div class="flex-shrink-0 shadow-2xl shadow-green-500">
+          <img
+            src="images/chill.jpg"
+            alt="About Me Image"
+            class="w-72 h-72 object-cover rounded transition-transform duration-500 hover:scale-105"
+          />
+        </div>
+        <div class="text-center md:text-left">
+          <h3 class="text-3xl font-bold mb-4">About Me</h3>
+          <p class="text-lg">
+            Welcome to my website! I'm Kamogelo Mogasoa, a Junior Software
+            Developer passionate about crafting engaging web experiences. My
+            journey is fueled by continuous learning and a commitment to
+            refining my skills in the ever-evolving world of web development.
           </p>
         </div>
       </div>
     </main>
-    <div id="Qualifications-wrapper">
-      <div class="badge-cards">
-        <a
-          href="https://www.credly.com/badges/3aa16c65-282a-4216-9764-8824c0255e46/linked_in_profile"
-          target="_top"
-          ><img
-            src="images/JavaScrpit badge.jpg"
-            class="certificates G-learing"
-            alt="JavaScript certificate"
-        /></a>
+
+    <!-- Qualifications Section -->
+    <section id="Qualifications-wrapper" class="py-12 bg-gray-950">
+      <div class="container mx-auto flex flex-wrap justify-center gap-8">
+        <div class="badge-cards">
+          <a
+            href="https://www.credly.com/badges/3aa16c65-282a-4216-9764-8824c0255e46/linked_in_profile"
+            target="_top"
+          >
+            <img
+              src="images/JavaScrpit badge.jpg"
+              alt="JavaScript Certificate"
+              class="w-96 h-96 object-cover rounded"
+            />
+          </a>
+        </div>
+        <div class="badge-cards">
+          <h3 class="text-xl font-semibold text-center mb-2">
+            My Certificates
+          </h3>
+          <a
+            href="https://www.mygreatlearning.com/certificate/LRXZVCHW"
+            target="_top"
+          >
+            <img
+              src="images/CSS-certificate.jpg"
+              alt="CSS Certificate"
+              class="w-96 h-96 object-cover rounded"
+            />
+          </a>
+        </div>
+        <div class="badge-cards">
+          <a
+            href="https://www.mygreatlearning.com/certificate/MFASOKVH"
+            target="_top"
+          >
+            <img
+              src="images/Prompt-Engineering Certificate.jpg"
+              alt="Prompt Engineering Certificate"
+              class="w-96 h-96 object-cover rounded"
+            />
+          </a>
+        </div>
       </div>
-      <div class="badge-cards">
-        <h3 class="badges badge-adjust">My certificates</h3>
-        <a
-          href="https://www.mygreatlearning.com/certificate/LRXZVCHW"
-          target="_top"
-          ><img
-            src="images/CSS-certificate.jpg"
-            class="certificates G-learing adjust"
-            alt="Front-End development css certificate"
-        /></a>
+    </section>
+
+    <section id="technologies" class="py-section-y pt-7">
+      <div class="container mx-auto px-6 max-w-content pb-12">
+        <h2
+          class="text-white text-h2 font-semibold mb-8 text-center md:text-center md:mt-3"
+        >
+          Technologies I Use
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="bg-gray-900 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 box-items"
+          >
+            <div class="flex items-center mb-4">
+              <i class="fab fa-html5 text-green-600 text-2xl mr-3"></i>
+              <h3 class="text-white text-lg font-semibold">HTML 100%</h3>
+            </div>
+            <div class="bg-black h-2 rounded-full relative">
+              <div
+                class="bg-green-600 h-2 rounded-full absolute top-0 left-0"
+                style="width: 100%"
+              ></div>
+            </div>
+            <p class="text-green-600 text-sm mt-2 text-right">Proficient</p>
+          </div>
+
+          <div
+            class="bg-gray-900 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 box-items"
+          >
+            <div class="flex items-center mb-4">
+              <i class="fab fa-css3-alt text-2xl mr-3"></i>
+              <h3 class="text-white text-lg font-semibold">CSS 75%</h3>
+            </div>
+            <div class="bg-black h-2 rounded-full relative">
+              <div
+                class="bg-green-600 h-2 rounded-full absolute top-0 left-0"
+                style="width: 95%"
+              ></div>
+            </div>
+            <p class="text-green-600 text-sm mt-2 text-right">Proficient</p>
+          </div>
+
+          <div
+            class="bg-gray-900 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 box-items"
+          >
+            <div class="flex items-center mb-4">
+              <i class="fab fa-js-square text-teal-500 text-2xl mr-3"></i>
+              <h3 class="text-yellow-400 text-lg font-semibold">
+                JavaScript 65%
+              </h3>
+            </div>
+            <div class="bg-black h-2 rounded-full relative">
+              <div
+                class="bg-yellow-400 h-2 rounded-full absolute top-0 left-0"
+                style="width: 65%"
+              ></div>
+            </div>
+            <p class="text-yellow-300 text-sm mt-2 text-right">Competent</p>
+          </div>
+
+          <div
+            class="bg-gray-900 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 box-items"
+          >
+            <div class="flex items-center mb-4">
+              <i class="fab fa-tailwind-css text-orange-300 text-2xl mr-3"></i>
+              <h3 class="text-orange-300 text-lg font-semibold">
+                Tailwind CSS 57%
+              </h3>
+            </div>
+            <div class="bg-black h-2 rounded-full relative">
+              <div
+                class="bg-orange-300 h-2 rounded-full absolute top-0 left-0"
+                style="width: 57%"
+              ></div>
+            </div>
+            <p class="text-orange-300 text-sm mt-2 text-right">Familiar</p>
+          </div>
+
+          <div
+            class="bg-gray-900 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 box-items"
+          >
+            <div class="flex items-center mb-4">
+              <i class="fab fa-sass text-orange-300 text-2xl mr-3"></i>
+              <h3 class="text-orange-300 text-lg font-semibold">SCSS 37%</h3>
+            </div>
+            <div class="bg-black h-2 rounded-full relative">
+              <div
+                class="bg-orange-300 h-2 rounded-full absolute top-0 left-0"
+                style="width: 37%"
+              ></div>
+            </div>
+            <p class="text-orange-300 text-sm mt-2 text-right">Basic</p>
+          </div>
+
+          <div
+            class="bg-gray-900 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 box-items"
+          >
+            <div class="flex items-center mb-4">
+              <i class="fab fa-js text-red-600 text-2xl mr-3"></i>
+              <!-- Using generic JS icon for TypeScript -->
+              <h3 class="text-red-600 text-lg font-semibold">TypeScript 15%</h3>
+            </div>
+            <div class="bg-black h-2 rounded-full relative">
+              <div
+                class="bg-red-600 h-2 rounded-full absolute top-0 left-0"
+                style="width: 15%"
+              ></div>
+            </div>
+            <p class="text-red-600 text-sm mt-2 text-right">Basic</p>
+          </div>
+
+          <div
+            class="bg-gray-900 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 box-items"
+          >
+            <div class="flex items-center mb-4">
+              <i class="fab fa-node-js text-orange-500 text-2xl mr-3"></i>
+              <h3 class="text-orange-500 text-lg font-semibold">Node.js 55%</h3>
+            </div>
+            <div class="bg-black h-2 rounded-full relative">
+              <div
+                class="bg-orange-500 h-2 rounded-full absolute top-0 left-0"
+                style="width: 45%"
+              ></div>
+            </div>
+            <p class="text-orange-500 text-sm mt-2 text-right">Learning 45%</p>
+          </div>
+
+          <div
+            class="bg-gray-900 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 box-items"
+          >
+            <div class="flex items-center mb-4">
+              <i class="fas fa-server text-orange-400 text-2xl mr-3"></i>
+              <!--Using server icon for Express.js -->
+              <h3 class="text-orange-500 text-lg font-semibold">
+                Express.js 45%
+              </h3>
+            </div>
+            <div class="bg-black h-2 rounded-full relative">
+              <div
+                class="bg-orange-500 h-2 rounded-full absolute top-0 left-0"
+                style="width: 45%"
+              ></div>
+            </div>
+            <p class="text-orange-500 text-sm mt-2 text-right">Learning 45%</p>
+          </div>
+
+          <div
+            class="bg-gray-900 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 box-items"
+          >
+            <div class="flex items-center mb-4">
+              <i class="fab fa-react text-teal-500 text-2xl mr-3"></i>
+              <h3 class="text- text-red-600 font-semibold">React.js 3%</h3>
+            </div>
+            <div class="bg-black h-2 rounded-full relative">
+              <div
+                class="bg-red-600 h-2 rounded-full absolute top-0 left-0"
+                style="width: 3%"
+              ></div>
+              <!-- Small percentage to show "Not Started" -->
+            </div>
+            <p class="text-red-600 text-sm mt-2 text-right">Not Started</p>
+          </div>
+        </div>
       </div>
-      <div class="badge-cards">
-        <a
-          href="https://www.mygreatlearning.com/certificate/MFASOKVH"
-          target="_top"
-          ><img
-            src="images/Prompt-Engineering Certificate.jpg"
-            class="certificates G-learing"
-            alt="Prompt-Engineering certificate"
-        /></a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-4">
+      <div class="container mx-auto text-center">
+        <small>&copy; Copyright 2024 All rights reserved</small>
       </div>
-    </div>
-    <div class="grid">
-      <div class="grid-container">
-        <em>technologies</em>
-      </div>
-      <div class="grid-container">
-        html
-        <meter
-          value="80"
-          min="0"
-          max="100"
-          high="100"
-          low="39"
-          optimum="50"
-        ></meter>
-      </div>
-      <div class="grid-container">
-        css
-        <meter
-          value="65"
-          min="0"
-          max="100"
-          high="100"
-          low="39"
-          optimum="50"
-        ></meter>
-      </div>
-      <div class="grid-container">
-        JavaScript
-        <meter
-          value="55"
-          min="0"
-          max="100"
-          high="100"
-          low="39"
-          optimum="50"
-        ></meter>
-      </div>
-      <div class="grid-container">
-        Scss
-        <meter
-          value="37"
-          min="0"
-          max="100"
-          high="100"
-          low="39"
-          optimum="50"
-        ></meter>
-      </div>
-      <div class="grid-container">
-        tailwind
-        <meter
-          value="57"
-          min="0"
-          max="100"
-          high="100"
-          low="39"
-          optimum="50"
-        ></meter>
-      </div>
-      <div class="grid-container">
-        react.js
-        <meter
-          value="0"
-          min="0"
-          max="100"
-          high="100"
-          low="39"
-          optimum="50"
-        ></meter>
-      </div>
-      <div class="grid-container">
-        typescript
-        <meter
-          value="20"
-          min="10"
-          max="100"
-          high="100"
-          low="39"
-          optimum="50"
-        ></meter>
-      </div>
-      <div class="grid-container">
-        Node.js
-        <meter
-          value="40"
-          min="10"
-          max="100"
-          high="100"
-          low="39"
-          optimum="50"
-        ></meter>
-      </div>
-      <div class="grid-container">
-        Express.js
-        <meter
-          value="50"
-          min="10"
-          max="100"
-          high="100"
-          low="39"
-          optimum="50"
-        ></meter>
-      </div>
-    </div>
-    <footer><small> &copy; Copyright-2024 All rights reserved</small></footer>
+    </footer>
     <script src="app.js" defer></script>
   </body>
 </html>
