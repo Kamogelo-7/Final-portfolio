@@ -1,3 +1,5 @@
+/* This JavaScript code snippet is creating a mobile menu functionality. Here's a breakdown of what it
+does: */
 const mobileMenuButton = document.getElementById("mobile-menu"); // Select button by ID
 const mobileMenu = document.getElementById("mobile"); // Select menu wrapper by ID
 
