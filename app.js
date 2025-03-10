@@ -1,4 +1,4 @@
-import year from "/Portfilo/year.js"; // Import year.js file
+import year from "year.js"; // Import year.js file
 
 /* This JavaScript code snippet is creating a mobile menu functionality. Here's a breakdown of what it
 does: */
