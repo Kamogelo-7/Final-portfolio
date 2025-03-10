@@ -29,6 +29,7 @@ lerna-debug.log*
 # Tailwind CSS
 tailwind.config.js
 postcss.config.js
+year.js
 
 # Build output
 dist/
