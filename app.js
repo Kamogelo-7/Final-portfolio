@@ -1,12 +1,21 @@
+import year from "/Portfilo/src/year.mjs"; // Import year.js file
+
 /* This JavaScript code snippet is creating a mobile menu functionality. Here's a breakdown of what it
 does: */
-const mobileMenuButton = document.getElementById("mobile-menu"); // Select button by ID
-const mobileMenu = document.getElementById("mobile"); // Select menu wrapper by ID
+
+const mobileMenuButton = document.getElementById("mobile-menu");
+const mobileMenu = document.getElementById("mobile");
+const yearElement = document.querySelector("small");
+yearElement.textContent = `© Copyright ${year} All rights reserved  `;
+
+const handleMobileMenu = () => {
+  mobileMenu.classList.toggle("hidden"); //  Keep toggling 'hidden' for initial mobile hiding
+  mobileMenu.classList.toggle("translate-y-[-100%]"); // Toggle slide-down position
+  mobileMenu.classList.toggle("opacity-0"); // Toggle opacity for fade (optional, but nice)
+};
 
 if (mobileMenuButton && mobileMenu) {
   mobileMenuButton.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden"); //  Keep toggling 'hidden' for initial mobile hiding
-    mobileMenu.classList.toggle("translate-y-[-100%]"); // Toggle slide-down position
-    mobileMenu.classList.toggle("opacity-0"); // Toggle opacity for fade (optional, but nice)
+    handleMobileMenu();
   });
 }
