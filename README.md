@@ -1,5 +1,12 @@
-# Final-portfolio
+# 🚀 Final Portfolio – 2024 Rework
 
-This is the new 2024 porftfolio re-work since the last one wasn't maintainable.
-Now with this new one in is being built with tailwind css and the main home page is still designed using Vanilla css,
-with more future builds to add using tailwind.
+This is the 2024 rework of my developer portfolio, rebuilt from scratch for improved maintainability, performance, and scalability.
+
+The new version is powered by Tailwind CSS, with the homepage still crafted in Vanilla CSS for precision and control. Future sections and components will be fully transitioned into Tailwind for a more consistent and efficient workflow.
+
+## ✅ Highlights
+
+→ Refactored from an unmaintainable legacy version 🤹‍♂️
+→ Modernized styling with Tailwind CSS 💎
+→ Clean, semantic HTML structure 🏗️
+→ Built for future expansion and responsive design
