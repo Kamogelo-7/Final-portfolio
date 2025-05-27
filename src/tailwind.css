@@ -19,15 +19,6 @@ auto` property. If the browser does support it, then it applies the CSS styles*/
   }
 }
 
-#about-me {
-  background-image: radial-gradient(
-      at 80% 100%,
-      hsl(0, 43%, 84%) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 0% 0%, hsl(0, 0%, 91%) 0px, transparent 50%);
-}
-
 .content {
   background-image: linear-gradient(to right, rgb(1, 90, 17), rgb(50, 50, 50));
 }
