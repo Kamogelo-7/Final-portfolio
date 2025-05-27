@@ -5,6 +5,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* This is a CSS feature that allows for smooth transitions between different states of a page. */
+@view-transition {
+  navigation: auto;
+  easing: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* The above code is using the `@supports` rule to check if the browser supports the `view-transition:
+auto` property. If the browser does support it, then it applies the CSS styles*/
+@supports (view-transition: auto) {
+  ::view-transition-group(*) {
+    animation-duration: 0.5s;
+  }
+}
+
 .content {
   background-image: linear-gradient(to right, rgb(1, 90, 17), rgb(50, 50, 50));
 }
