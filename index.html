@@ -38,7 +38,7 @@
 
   <body class="text-black">
     <!-- Hero Section -->
-    <header>
+    <header class="hero_header">
       <nav
         class="relative container mx-auto px-6 py-4 flex items-center justify-between"
       >
@@ -62,9 +62,9 @@
           </button>
           <div
             id="mobile"
-            class="hidden md:hidden absolute top-[auto] left-0 right-0 bg-black shadow-md z-20 overflow-hidden transition-all duration-300 ease-out transform translate-y-[-100%] opacity-0"
+            class="hidden md:hidden absolute top-[auto] left-0 right-0 bg-white shadow-md z-20 overflow-hidden transition-all duration-300 ease-out transform translate-y-[-100%] opacity-0 border-t border-gray-200"
           >
-            <ul class="px-6 py-4 space-y-2 text-white">
+            <ul class="px-6 py-4 space-y-2 text-black">
               <li class="font-semibold">
                 <a
                   href="#about-me"
@@ -101,17 +101,17 @@
           <div class="absolute inset-0 rounded-full"></div>
           <img
             id="main-image"
-            decoding="async"
             src="images/graduation .jpg"
             alt="Kamogelo Mogasoa - Front-End Developer"
             loading="lazy"
-            class="rounded-full w-64 h-64 object-cover transition-transform duration-500 hover:scale-110"
+            decoding="async"
+            class="relative rounded-full w-64 h-64 object-cover transition-transform duration-500 hover:scale-110"
           />
         </div>
         <h1 class="mt-4 text-4xl font-bold">Hi, I'm Kamogelo</h1>
         <p class="mt-2 text-lg text-center">
-          I'm a passionate Front-End Developer dedicated to crafting engaging
-          web experiences.
+          I'm a passionate Software Developer dedicated to crafting engaging web
+          experiences.
         </p>
       </div>
     </header>
@@ -125,22 +125,20 @@
           href="https://github.com/Kamogelo-7 "
           target="_blank"
           rel="noopener noreferrer"
-          class="block bg-black p-4 rounded text-center"
+          class="hero_links text-center"
           >GitHub</a
         >
         <a
           href="https://www.youtube.com/@Kamogelo-Mogasoa"
-          class="block bg-black p-4 rounded text-center"
+          class="hero_links text-center"
           >YouTube</a
         >
-        <a
-          href="https://www.fiverr.com/ekgrafx"
-          class="block bg-black p-4 rounded text-center"
+        <a href="https://www.fiverr.com/ekgrafx" class="hero_links text-center"
           >Fiverr</a
         >
         <a
           href="https://stackoverflow.com/users/20754182/enoch-mogasoa"
-          class="block bg-black p-4 rounded text-center"
+          class="hero_links text-center"
           >Stackoverflow</a
         >
       </div>
@@ -158,7 +156,7 @@
               class="w-16 h-16 mx-auto"
             />
             <h3 class="text-xl font-semibold mt-4 text-center">CSS Skills</h3>
-            <p class="text-sm text-center mt-2">
+            <p class="skills_text">
               Proficient in CSS, Flexbox, and Grid for responsive designs.
             </p>
           </div>
@@ -170,7 +168,7 @@
               class="w-16 h-16 mx-auto"
             />
             <h3 class="text-xl font-semibold mt-4 text-center">Education</h3>
-            <p class="text-sm text-center mt-2">
+            <p class="skills_text">
               Studied I.T at
               <a
                 href="https://www.richfield.ac.za/"
@@ -190,7 +188,7 @@
               class="w-16 h-16 mx-auto"
             />
             <h3 class="text-xl font-semibold mt-4 text-center">Extra Skills</h3>
-            <p class="text-sm text-center mt-2">
+            <p class="skills_text">
               Familiar with Git/GitHub for version control and collaboration.
               Designed and styled websites with CSS for a visually appealing
               layout.
@@ -202,7 +200,7 @@
             <h3 class="text-xl text-green-400 font-semibold text-center">
               What I Do
             </h3>
-            <p class="text-sm text-white text-center mt-2">
+            <p class="skills_text">
               Building responsive, user-friendly interfaces with modern
               technologies. Continuously learning and refining my skills.
             </p>
@@ -216,17 +214,18 @@
       <div
         class="container mx-auto flex flex-col md:flex-row items-center justify-center gap-8"
       >
-        <div class="flex-shrink-0 shadow-2xl shadow-gray-700">
+        <div class="flex-shrink-0 shadow-2xl shadow-black">
           <img
-            src="images/chill.jpg"
+            src="images/grad pic1.jpg"
             loading="lazy"
             alt="Kamogelo Mogasoa casually in a open space smiling"
             class="w-72 h-72 object-cover rounded transition-transform duration-500 hover:scale-105"
           />
         </div>
-        <div class="text-center md:text-left mask-b-from-0%">
-          <h3 class="text-3xl font-bold mb-4">About Me</h3>
-          <p class="text-lg text-center md:text-2xl">
+        <div class="text-center md:text-left">
+          <h3 class="text-3xl sm:text-center font-bold mb-4">About Me</h3>
+
+          <p class="text-center md:text-2xl text-gray-600 text-balance">
             Welcome to my website! I'm Kamogelo Mogasoa, a Junior Software
             Developer passionate about crafting engaging web experiences. My
             journey is fueled by continuous learning and a commitment to
@@ -237,8 +236,13 @@
     </main>
 
     <!-- Qualifications Section -->
-    <section id="Qualifications-wrapper" class="py-12 bg-black">
-      <div class="container mx-auto flex flex-wrap justify-center gap-8">
+    <section
+      id="Qualifications-wrapper"
+      class="py-12 bg-gradient-to-r from-gradientBlue via-gradientPurple to-gradientPink md:mask-b-from-75%"
+    >
+      <div
+        class="container mx-auto flex flex-wrap justify-center gap-2 px-4 sm:px-6 lg:px-8"
+      >
         <div class="badge-cards">
           <a
             href="https://www.credly.com/badges/3aa16c65-282a-4216-9764-8824c0255e46/linked_in_profile"
@@ -247,7 +251,9 @@
             <img
               src="images/JavaScrpit badge.jpg"
               alt="JavaScript Certificate"
-              class="w-96 h-96 object-cover rounded"
+              class="qualification_image"
+              loading="lazy"
+              decoding="async"
             />
           </a>
         </div>
@@ -263,7 +269,8 @@
               src="images/CSS-certificate.jpg"
               alt="CSS Certificate"
               loading="lazy"
-              class="w-96 h-96 object-cover rounded"
+              decoding="async"
+              class="qualification_image"
             />
           </a>
         </div>
@@ -276,7 +283,8 @@
               src="images/Prompt-Engineering Certificate.jpg"
               alt="Prompt Engineering Certificate"
               loading="lazy"
-              class="w-96 h-96 object-cover rounded"
+              decoding="async"
+              class="qualification_image"
             />
           </a>
         </div>
@@ -285,18 +293,14 @@
 
     <section id="technologies" class="py-section-y pt-7">
       <div class="container mx-auto px-6 max-w-content pb-12">
-        <h2
-          class="text-white text-h2 font-semibold mb-8 text-center md:text-center md:mt-3"
-        >
+        <h3 class="text-black text-xl font-semibold text-center mb-2">
           Technologies I Use
-        </h2>
+        </h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div
-            class="bg-black rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 box-items"
-          >
+          <div class="technology_cards box-items">
             <div class="flex items-center mb-4">
               <i class="fab fa-html5 text-green-600 text-2xl mr-3"></i>
-              <h3 class="text-white text-lg font-semibold">HTML 100%</h3>
+              <h3 class="text-black text-lg font-semibold">HTML 100%</h3>
             </div>
             <div class="bg-black h-2 rounded-full relative">
               <div
@@ -306,12 +310,10 @@
             <p class="text-green-600 text-sm mt-2 text-right">Proficient</p>
           </div>
 
-          <div
-            class="bg-black rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 box-items"
-          >
+          <div class="technology_cards box-items">
             <div class="flex items-center mb-4">
               <i class="fab fa-css3-alt text-2xl mr-3"></i>
-              <h3 class="text-white text-lg font-semibold">CSS 95%</h3>
+              <h3 class="text-black text-lg font-semibold">CSS 95%</h3>
             </div>
             <div class="bg-black h-2 rounded-full relative">
               <div
@@ -321,12 +323,10 @@
             <p class="text-green-600 text-sm mt-2 text-right">Proficient</p>
           </div>
 
-          <div
-            class="bg-black rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 box-items"
-          >
+          <div class="technology_cards box-items">
             <div class="flex items-center mb-4">
               <i class="fab fa-js-square text-teal-500 text-2xl mr-3"></i>
-              <h3 class="text-white text-lg font-semibold">JavaScript 95%</h3>
+              <h3 class="text-black text-lg font-semibold">JavaScript 95%</h3>
             </div>
             <div class="bg-black h-2 rounded-full relative">
               <div
@@ -336,11 +336,9 @@
             <p class="text-green-600 text-sm mt-2 text-right">Proficient</p>
           </div>
 
-          <div
-            class="bg-black rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 box-items"
-          >
+          <div class="technology_cards box-items">
             <div class="flex items-center mb-4">
-              <h3 class="text-white text-lg font-semibold">
+              <h3 class="text-black text-lg font-semibold">
                 Tailwind CSS 100%
               </h3>
             </div>
@@ -352,11 +350,9 @@
             <p class="text-green-600 text-sm mt-2 text-right">Proficient</p>
           </div>
 
-          <div
-            class="bg-black rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 box-items"
-          >
+          <div class="technology_cards box-items">
             <div class="flex items-center mb-4">
-              <h3 class="text-orange-300 text-lg font-semibold">SCSS 37%</h3>
+              <h3 class="text-black text-lg font-semibold">SCSS 37%</h3>
             </div>
             <div class="bg-black h-2 rounded-full relative">
               <div
@@ -366,14 +362,10 @@
             <p class="text-orange-300 text-sm mt-2 text-right">Basic</p>
           </div>
 
-          <div
-            class="bg-black rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 box-items"
-          >
+          <div class="technology_cards box-items">
             <div class="flex items-center mb-4">
               <!-- Using generic JS icon for TypeScript -->
-              <h3 class="text-yellow-400 text-lg font-semibold">
-                TypeScript 65%
-              </h3>
+              <h3 class="text-black text-lg font-semibold">TypeScript 65%</h3>
             </div>
             <div class="bg-black h-2 rounded-full relative">
               <div
@@ -383,11 +375,9 @@
             <p class="text-yellow-400 text-sm mt-2 text-right">Competent</p>
           </div>
 
-          <div
-            class="bg-black rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 box-items"
-          >
+          <div class="technology_cards box-items">
             <div class="flex items-center mb-4">
-              <h3 class="text-orange-500 text-lg font-semibold">Node.js 55%</h3>
+              <h3 class="text-black text-lg font-semibold">Node.js 55%</h3>
             </div>
             <div class="bg-black h-2 rounded-full relative">
               <div
@@ -397,14 +387,10 @@
             <p class="text-orange-500 text-sm mt-2 text-right">Learning 45%</p>
           </div>
 
-          <div
-            class="bg-black rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 box-items"
-          >
+          <div class="technology_cards box-items">
             <div class="flex items-center mb-4">
               <!--Using server icon for Express.js -->
-              <h3 class="text-orange-500 text-lg font-semibold">
-                Express.js 45%
-              </h3>
+              <h3 class="text-black text-lg font-semibold">Express.js 45%</h3>
             </div>
             <div class="bg-black h-2 rounded-full relative">
               <div
@@ -414,13 +400,9 @@
             <p class="text-orange-500 text-sm mt-2 text-right">Learning 45%</p>
           </div>
 
-          <div
-            class="bg-black rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 box-items"
-          >
+          <div class="technology_cards box-items">
             <div class="flex items-center mb-4">
-              <h3 class="text-orange-500 text-lg font-semibold">
-                React.js 45%
-              </h3>
+              <h3 class="text-black text-lg font-semibold">React.js 45%</h3>
             </div>
             <div class="bg-black h-2 rounded-full relative">
               <div
@@ -434,7 +416,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black py-4">
+    <footer class="footer py-4">
       <div class="container mx-auto text-white text-center">
         <small> &copy; 2025</small>
       </div>
