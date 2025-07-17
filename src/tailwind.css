@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@theme {
+  --color-gradientBlue: #1e90ff;
+  --color-gradientPurple: #a76dcc;
+  --color-gradientPink: #ff77b5;
+}
+
 body {
   font-family: "Fira Code", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -23,16 +29,39 @@ auto` property. If the browser does support it, then it applies the CSS styles*/
   background-image: linear-gradient(to right, rgb(1, 90, 17), rgb(50, 50, 50));
 }
 .box-items {
-  @apply hover:scale-105 duration-500 ease-in-out md:p-5 p-4;
+  @apply transition-transform duration-500 ease-in-out md:p-5 p-4;
 }
 .image-stylying {
   @apply rounded-lg duration-500 hover:shadow-black hover:shadow-lg border-t-4 border-black;
 }
 .badge-cards {
-  @apply transform hover:scale-110 duration-500;
+  @apply transition-transform  hover:scale-110 duration-500 p-4
+    ease-in-out;
 }
 .skills-card {
-  @apply border-t-4 border-green-400;
+  @apply outline-1 outline-black bg-slate-300/5 p-4 rounded shadow-lg hover:shadow-2xl transition-shadow duration-300;
+}
+.skills_text {
+  @apply text-2xl font-bold text-gray-800 mb-4;
+}
+
+.hero_links {
+  @apply bg-gray-100 outline-1 outline-black  rounded-lg p-2.5 shadow-lg shadow-gray-400 text-black font-semibold;
+}
+
+.qualification_image {
+  @apply w-96 h-96 object-cover rounded outline-2 outline-black shadow-lg shadow-black;
+}
+
+.technology_cards {
+  @apply bg-gray-100 outline-1 outline-gray-400 rounded-lg p-6 shadow-md  hover:scale-105 hover:shadow-lg transition-shadow duration-300;
+}
+.hero_header {
+  @apply bg-gradient-to-b from-white/5 to-slate-200 mask-b-from-95%;
+}
+
+.footer {
+  @apply bg-gray-900;
 }
 
 body {
