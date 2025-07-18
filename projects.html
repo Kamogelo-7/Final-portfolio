@@ -259,13 +259,69 @@
         </div>
       </section>
     </main>
-    <footer class="footer text-gray-300 py-6 text-center text-sm">
-      <div class="container mx-auto px-6">
-        <small>
-          &copy; 2024 Kamogelo Mogasoa. All rights reserved. |
-          <a href="#" class="text-teal-500 hover:underline">Privacy Policy</a> |
-          <a href="#" class="text-teal-500 hover:underline">Terms of Service</a>
-        </small>
+    <footer class="bg-gray-900 text-gray-300 py-12">
+      <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- About / Logo -->
+        <div>
+          <h4 class="text-xl font-bold text-white mb-2">Kamogelo Mogasoa</h4>
+          <p>
+            Software Engineer & Frontend Developer — Building engaging web
+            experiences and coordinating remote teams.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-2">Quick Links</h4>
+          <ul>
+            <li><a href="#about-me" class="hover:text-white">About Me</a></li>
+            <li>
+              <a href="#projects-contributions" class="hover:text-white"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#technologies" class="hover:text-white">Technologies</a>
+            </li>
+            <li><a href="/contact" class="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social & Newsletter -->
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-2">Stay Connected</h4>
+          <div class="flex space-x-4 mb-4">
+            <!-- Replace with your SVG social icons -->
+            <a href="https://github.com/Kamogelo-7" class="hover:text-white"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/kamogelo-mogasoa-5021a52b1"
+              class="hover:text-white"
+              >LinkedIn</a
+            >
+            <a href="https://www.fiverr.com/ekgrafx" class="hover:text-white"
+              >Fiverr</a
+            >
+          </div>
+          <form action="#" class="flex">
+            <input
+              type="email"
+              placeholder="Your email"
+              class="flex-1 px-3 py-2 rounded-l bg-gray-800 text-gray-200 focus:outline-none"
+            />
+            <button
+              type="submit"
+              class="px-4 py-2 bg-green-500 rounded-r text-white hover:bg-green-600"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="mt-8 border-t border-gray-700 pt-4 text-center">
+        <small>&copy; 2025 Kamogelo Mogasoa. All rights reserved.</small>
       </div>
     </footer>
     <script src="app.js" defer type="module"></script>
