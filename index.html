@@ -208,26 +208,27 @@
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-3.5"
         >
-          <div class="skills-card bg-black p-4 rounded">
+          <div class="skills-card bg-black p-4 rounded text-center">
             <img
               src="images/CSS3_logo.svg.png"
               alt="CSS3 logo representing front-end styling expertise"
               loading="lazy"
               class="w-16 h-16 mx-auto"
             />
-            <h3 class="text-xl font-semibold mt-4 text-center">CSS Skills</h3>
+            <h3 class="text-xl font-semibold mt-4">CSS Skills</h3>
             <p class="skills_text">
               Proficient in CSS, Flexbox, and Grid for responsive designs.
             </p>
           </div>
-          <div class="skills-card bg-black p-4 rounded">
+
+          <div class="skills-card bg-black p-4 rounded text-center">
             <img
               src="images/richfield.png"
               alt="Richfield College Logo"
               loading="lazy"
               class="w-16 h-16 mx-auto"
             />
-            <h3 class="text-xl font-semibold mt-4 text-center">Education</h3>
+            <h3 class="text-xl font-semibold mt-4">Education</h3>
             <p class="skills_text">
               Studied I.T at
               <a
@@ -235,31 +236,48 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="text-green-400 hover:underline"
-                >Richfield College</a
+              >
+                Richfield College</a
               >
               in Pretoria. Always learning and practicing to enhance my skills.
             </p>
           </div>
-          <div class="skills-card bg-black p-4 rounded">
+
+          <div class="skills-card bg-black p-4 rounded text-center">
             <img
               src="images/png-transparent-gray-box-logo-illustration-computer-icons-freight-transport-box-logistics-shipping-icon-angle-rectangle-triangle.png"
-              loading="lazy"
               alt="Extra Skills Icon"
+              loading="lazy"
               class="w-16 h-16 mx-auto"
             />
-            <h3 class="text-xl font-semibold mt-4 text-center">Extra Skills</h3>
+            <h3 class="text-xl font-semibold mt-4">Extra Skills</h3>
             <p class="skills_text">
               Familiar with Git/GitHub for version control and collaboration.
               Designed and styled websites with CSS for a visually appealing
               layout.
             </p>
           </div>
-          <div
-            class="skills-card bg-black p-4 rounded shadow transition hover:shadow-lg"
-          >
-            <h3 class="text-xl text-green-400 font-semibold text-center">
-              What I Do
-            </h3>
+
+          <div class="skills-card bg-black p-4 rounded text-center">
+            <svg
+              class="w-10 h-10 text-gray-800 fill-amber-300 inline-block mb-1.5 stroke-black pt-1"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m7.171 12.906-2.153 6.411 2.672-.89 1.568 2.34 1.825-5.183m5.73-2.678 2.154 6.411-2.673-.89-1.568 2.34-1.825-5.183M9.165 4.3c.58.068 1.153-.17 1.515-.628a1.681 1.681 0 0 1 2.64 0 1.68 1.68 0 0 0 1.515.628 1.681 1.681 0 0 1 1.866 1.866c-.068.58.17 1.154.628 1.516a1.681 1.681 0 0 1 0 2.639 1.682 1.682 0 0 0-.628 1.515 1.681 1.681 0 0 1-1.866 1.866 1.681 1.681 0 0 0-1.516.628 1.681 1.681 0 0 1-2.639 0 1.681 1.681 0 0 0-1.515-.628 1.681 1.681 0 0 1-1.867-1.866 1.681 1.681 0 0 0-.627-1.515 1.681 1.681 0 0 1 0-2.64c.458-.361.696-.935.627-1.515A1.681 1.681 0 0 1 9.165 4.3ZM14 9a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"
+              />
+            </svg>
+
+            <h3 class="text-xl font-semibold mt-4">What I Do</h3>
             <p class="skills_text">
               Building responsive, user-friendly interfaces with modern
               technologies. Continuously learning and refining my skills.
@@ -285,7 +303,7 @@
         <div class="text-center md:text-left">
           <h3 class="text-3xl sm:text-center font-bold mb-4">About Me</h3>
 
-          <p class="text-center md:text-2xl text-gray-600 text-balance">
+          <p class="text-center md:text-2xl text-black text-balance">
             Welcome to my website! I'm Kamogelo Mogasoa, a Junior Software
             Developer passionate about crafting engaging web experiences. My
             journey is fueled by continuous learning and a commitment to
@@ -475,12 +493,114 @@
       </div>
     </section>
 
+    <!-- Projects & Contributions Section -->
+    <section id="projects-contributions" class="py-12 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <h3 class="text-2xl font-semibold text-center mb-6">
+          Projects & Contributions
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="contributions_card">
+            <h4 class="text-xl text-center font-bold mb-2">
+              Freelance Platform Development
+            </h4>
+            <p>
+              Helped launch and manage freelance services on platforms like
+              Fiverr and Upwork for The Founders Vision. Focused on structuring
+              services, client acquisition, and multi-role team collaboration.
+            </p>
+          </div>
+          <div class="contributions_card">
+            <h4 class="text-xl text-center font-bold mb-2">
+              Frontend & Backend Development
+            </h4>
+            <p>
+              Built responsive web apps with JavaScript, React.js, Node.js, and
+              Express. Integrated RESTful APIs, authentication flows, and
+              ensured clean UI/UX experience with TailwindCSS and SCSS.
+            </p>
+          </div>
+          <div class="contributions_card">
+            <h4 class="text-xl text-center font-bold mb-2">
+              Digital Operations & Leadership
+            </h4>
+            <p>
+              Coordinated cross-functional remote teams, assigned projects,
+              optimized communication flows, and contributed to startup
+              operations including strategy, partnerships, and client relations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="footer py-4">
-      <div class="container mx-auto text-white text-center">
-        <small> &copy; 2025</small>
+    <footer class="bg-gray-900 text-gray-300 py-12">
+      <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- About / Logo -->
+        <div>
+          <h4 class="text-xl font-bold text-white mb-2">Kamogelo Mogasoa</h4>
+          <p>
+            Software Engineer & Frontend Developer — Building engaging web
+            experiences and coordinating remote teams.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-2">Quick Links</h4>
+          <ul>
+            <li><a href="#about-me" class="hover:text-white">About Me</a></li>
+            <li>
+              <a href="#projects-contributions" class="hover:text-white"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#technologies" class="hover:text-white">Technologies</a>
+            </li>
+            <li><a href="/contact" class="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social & Newsletter -->
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-2">Stay Connected</h4>
+          <div class="flex space-x-4 mb-4">
+            <!-- Replace with your SVG social icons -->
+            <a href="https://github.com/Kamogelo-7" class="hover:text-white"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/kamogelo-mogasoa-5021a52b1"
+              class="hover:text-white"
+              >LinkedIn</a
+            >
+            <a href="https://www.fiverr.com/ekgrafx" class="hover:text-white"
+              >Fiverr</a
+            >
+          </div>
+          <form action="#" class="flex">
+            <input
+              type="email"
+              placeholder="Your email"
+              class="flex-1 px-3 py-2 rounded-l bg-gray-800 text-gray-200 focus:outline-none"
+            />
+            <button
+              type="submit"
+              class="px-4 py-2 bg-green-500 rounded-r text-white hover:bg-green-600"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="mt-8 border-t border-gray-700 pt-4 text-center">
+        <small>&copy; 2025 Kamogelo Mogasoa. All rights reserved.</small>
       </div>
     </footer>
+
     <script src="app.js" defer type="module"></script>
   </body>
 </html>
