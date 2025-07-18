@@ -1,4 +1,4 @@
-# 🚀 Final Portfolio – 2024 Rework
+# 🚀 Final Portfolio – 2025 Rework
 
 This is the 2024 rework of my developer portfolio, rebuilt from scratch for improved maintainability, performance, and scalability.
 
