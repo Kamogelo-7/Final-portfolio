@@ -42,7 +42,7 @@ auto` property. If the browser does support it, then it applies the CSS styles*/
   @apply outline-1 outline-black bg-slate-300/5 p-4 rounded shadow-lg hover:shadow-2xl transition-shadow duration-300;
 }
 .skills_text {
-  @apply text-2xl font-bold text-gray-800 mb-4;
+  @apply text-xl font-bold text-gray-800 mb-4;
 }
 
 .hero_links {
@@ -54,10 +54,14 @@ auto` property. If the browser does support it, then it applies the CSS styles*/
 }
 
 .technology_cards {
-  @apply bg-gray-100 outline-1 outline-gray-400 rounded-lg p-6 shadow-md  hover:scale-105 hover:shadow-lg transition-shadow duration-300;
+  @apply bg-gray-100 outline-1 outline-gray-400 rounded-lg p-6 shadow-md  transition-transform duration-300 hover:scale-105 hover:shadow-lg;
 }
 .hero_header {
   @apply bg-gradient-to-b from-white/5 to-slate-200 mask-b-from-95%;
+}
+
+.contributions_card {
+  @apply bg-gray-100 outline-1 outline-gray-400 rounded-lg p-6 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg;
 }
 
 .footer {
