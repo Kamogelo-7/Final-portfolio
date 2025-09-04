@@ -28,6 +28,18 @@ auto` property. If the browser does support it, then it applies the CSS styles*/
 .content {
   background-image: linear-gradient(to right, rgb(1, 90, 17), rgb(50, 50, 50));
 }
+
+.hero_header {
+  @apply relative; /* keep Tailwind goodies */
+
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(0, 0, 0, 0.35) 1px,
+    transparent 0
+  );
+  background-size: 20px 20px;
+}
+
 .box-items {
   @apply transition-transform duration-500 ease-in-out md:p-5 p-4;
 }
@@ -55,9 +67,6 @@ auto` property. If the browser does support it, then it applies the CSS styles*/
 
 .technology_cards {
   @apply bg-gray-100 outline-1 outline-gray-400 rounded-lg p-6 shadow-md  transition-transform duration-300 hover:scale-105 hover:shadow-lg;
-}
-.hero_header {
-  @apply bg-gradient-to-b from-white/5 to-slate-200 mask-b-from-95%;
 }
 
 .contributions_card {
