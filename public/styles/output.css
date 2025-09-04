@@ -20,7 +20,6 @@
     --color-cyan-400: oklch(0.789 0.154 211.53);
     --color-blue-500: oklch(0.623 0.214 259.815);
     --color-pink-400: oklch(0.718 0.202 349.761);
-    --color-slate-200: oklch(0.929 0.013 255.508);
     --color-slate-300: oklch(0.869 0.022 252.894);
     --color-gray-100: oklch(0.967 0.003 264.542);
     --color-gray-200: oklch(0.928 0.006 264.531);
@@ -32,8 +31,6 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --container-2xl: 42rem;
-    --container-3xl: 48rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-lg: 1.125rem;
@@ -342,9 +339,6 @@
   .h-auto {
     height: auto;
   }
-  .w-3\.5 {
-    width: calc(var(--spacing) * 3.5);
-  }
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
@@ -380,12 +374,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .max-w-2xl {
-    max-width: var(--container-2xl);
-  }
-  .max-w-3xl {
-    max-width: var(--container-3xl);
   }
   .flex-1 {
     flex: 1;
@@ -941,6 +929,11 @@ body {
 .content {
   background-image: linear-gradient(to right, rgb(1, 90, 17), rgb(50, 50, 50));
 }
+.hero_header {
+  position: relative;
+  background-image: radial-gradient( circle at 1px 1px, rgba(0, 0, 0, 0.35) 1px, transparent 0 );
+  background-size: 20px 20px;
+}
 .box-items {
   padding: calc(var(--spacing) * 4);
   transition-property: transform, translate, scale, rotate;
@@ -1086,22 +1079,6 @@ body {
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
   }
-}
-.hero_header {
-  --tw-gradient-position: to bottom in oklab;
-  background-image: linear-gradient(var(--tw-gradient-stops));
-  --tw-gradient-from: color-mix(in srgb, #fff 5%, transparent);
-  @supports (color: color-mix(in lab, red, red)) {
-    --tw-gradient-from: color-mix(in oklab, var(--color-white) 5%, transparent);
-  }
-  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  --tw-gradient-to: var(--color-slate-200);
-  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  mask-image: var(--tw-mask-linear), var(--tw-mask-radial), var(--tw-mask-conic);
-  mask-composite: intersect;
-  --tw-mask-linear: var(--tw-mask-left), var(--tw-mask-right), var(--tw-mask-bottom), var(--tw-mask-top);
-  --tw-mask-bottom: linear-gradient(to bottom, var(--tw-mask-bottom-from-color) var(--tw-mask-bottom-from-position), var(--tw-mask-bottom-to-color) var(--tw-mask-bottom-to-position));
-  --tw-mask-bottom-from-position: 95%;
 }
 .contributions_card {
   border-radius: var(--radius-lg);
